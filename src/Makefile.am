@@ -1,7 +1,8 @@
 AM_CPPFLAGS = \
     -I$(top_srcdir)/include
 
-bin_PROGRAMS = align
+lib_LTLIBRARIES = libalign.la
 
-align_SOURCES = \
-    main.c
+libalign_la_SOURCES = \
+    bitstream.c \
+    align.c
